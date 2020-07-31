@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
                 console.log(data.error)
             }
             else{                
-                messageOne.textContent = 'Weather in: ' + data.location + ' is ' + data.forecast + ', temperature is: ' + data.temperature + 'ºC'
+                messageOne.textContent = 'Weather in: ' + data.location + ' is ' + data.forecast + ', temperature is: ' + data.temperature + 'ºC, huumidity is ' + data.humidity + '%'
             }
         })
     })
