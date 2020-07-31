@@ -37,7 +37,7 @@ app.get('/weather', (req, res) => {
                     error: "Error geocoding address"
                 })
             }
-            forecast(geocodeData, (error, {forecast, temperature, location} = {}) =>{
+            forecast(geocodeData, (error, {forecast, temperature, location, humidity} = {}) =>{
                 if(error) {
                     return log('Error: ', error)
                 }
